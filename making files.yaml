@@ -1,0 +1,9 @@
+---
+
+- hosts: localhost
+  sudo: yes
+  gather_facts: no
+
+  tasks:
+   - name: creating files
+     file: path=/home/vagrant/file state=touch owner=vagrant mode=700
