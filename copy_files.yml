@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name: copying files from within the system
+      copy:
+        src: /home/vagrant/file/file.txt
+        dest:  /home/vagrant/files
+~
